@@ -11,7 +11,12 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
                 <h3 className="text-purple-200 text-lg my-2">
                     <span className="text-2x1">🍿</span>usePopcorn
                 </h3>
-                <button className="block md:hidden text-white focus:outline-none"
+
+                <h3>
+
+                </h3>
+
+                <button className="block md:hidden lg:hidden text-white focus:outline-none"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {isMenuOpen ? (
                     <img src="/path/to/open-menu.svg" alt="Open Menu" className="h-6 w-6" />
@@ -19,7 +24,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
                     <img src="/path/to/close-menu.svg" alt="Close Menu" className="h-6 w-6" />
                     )}
                     </button>
-                <div className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+                <div className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:hidden lg:hidden`}>
                         <a href="#" className="text-purple-200 hover:text-white px-3 py-2">Search</a>
                 </div>
 
