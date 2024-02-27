@@ -7,14 +7,17 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return(
         <div className="sticky top-0 z-50 bg-purple-700 border-2 border-black flex justify-between items-center px-10 py-0 bg-purple-700">
-            <div className="max-w-screen-lg ">
-                <h3 className="text-purple-200 text-lg my-2">
+            <div className="max-w-screen-lg flex items-center justify-between gap-40">
+                <div className="text-purple-200 text-lg my-2">
                     <span className="text-2x1">🍿</span>usePopcorn
-                </h3>
+                </div>
 
-                <h3>
+                <div className="flex justify-between items-center border border-gray-300 rounded-md p-2">
+                    <input type="text" placeholder="Movies Search.." 
+                    className="w-full px-2 py-1 text-gray-700 bg-gray-200 rounded-md focus:outline-none focus:bg-white"
+                    />
+                </div>
 
-                </h3>
 
                 <button className="block md:hidden lg:hidden text-white focus:outline-none"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -28,6 +31,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
                         <a href="#" className="text-purple-200 hover:text-white px-3 py-2">Search</a>
                 </div>
 
+                
             </div>
         </div>
     )
