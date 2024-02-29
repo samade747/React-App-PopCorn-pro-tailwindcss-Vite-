@@ -41,4 +41,4 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
 }
 
 
-export default Navbar
+export default Navbar;
