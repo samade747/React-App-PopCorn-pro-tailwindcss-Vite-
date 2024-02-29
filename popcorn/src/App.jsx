@@ -6,7 +6,7 @@ import Navigationbar from './Components/Navigationbar'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
   const [inputValue, setInputValue] = useState('')
 
   return (
