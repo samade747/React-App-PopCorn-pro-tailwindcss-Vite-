@@ -8,7 +8,7 @@ import MovieList from './Components/MovieList';
 function App() {
   const [inputValue, setInputValue] = useState('');
   const [renderMovies, setRenderMovies] = useState([]);
-  const [moviesData, setMoivesData] = useState([]); 
+  const [moviesData, setMoivesData] = useState(""); 
   
 
   useEffect(()=> {
@@ -27,7 +27,7 @@ function App() {
 return (
     <>
         <Navigationbar inputValue={inputValue} setInputValue={setInputValue} /> 
-        <MovieList moviesData={moviesData} setMoivesData={setMoivesData} />
+        <MovieList moviesData={moviesData} setMoivesData={setMoivesData} renderMovies={renderMovies} setRenderMovies={setRenderMovies}/>
     </>
   )
 }
