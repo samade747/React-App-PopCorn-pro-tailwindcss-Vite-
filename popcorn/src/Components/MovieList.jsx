@@ -44,8 +44,20 @@ const randomMint = Math.floor(Math.random() * 10)
       setShowDes(true)
       setCount(count + 1)
     return(
-        <div>
-        
+      <div className="flex justify-center mt-20 gap-15">
+        <div className="lg:7/12 md:10/12 xs:w-10/12 sm:w-10/12 bg-gray-800 rodunded-3x1 py-5 relative" >
+          <p className="absolute top-0 right-7 bg-gray-800 w-6 h-6 rounded-full justify-center items-center">-</p>
+        { moviesData &&
+        moviesData?.map((movies, index) => {
+          
+        })
+          
+          
+          
+          }
+
+
+        </div>
       </div>
     )
 }
