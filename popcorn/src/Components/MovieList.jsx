@@ -9,6 +9,10 @@ function MovieList({ moviesData, setMoivesData, renderMovies, setRenderMovies })
   const [watchedMin, setWatchedMin] = useState('');
   const [showDes, setShowDes] = useState(true);
   const [count, setCount] = useState(0);
+  const [showBtn, setShowBtn] = useState(false);
+  const [ratingStar1, setRatingStar1] = useState('');
+  const [ratingStar2, setRatingStar2] = useState('');
+  const [ratingCount, setRatingCount] = useState(0);
     
 
       console.log(moviesData)
@@ -49,10 +53,11 @@ const randomMint = Math.floor(Math.random() * 10)
           <p className="absolute top-0 right-7 bg-gray-800 w-6 h-6 rounded-full justify-center items-center">-</p>
         { moviesData &&
         moviesData?.map((movies, index) => {
-          
-        })
-          
-          
+          <SingleMovies movies={movies} key={index} moviesData={moviesData} setShowDes={setShowDes} specificMovie={specificMovie} setSpecificMovie={setSpecificMovie} showBtn={showBtn} setShowBtn={setShowBtn} />
+        })}
+        <div className="lg:7/12 md:10/12 xs:w-10/12 sm:w-10/12 bg-gray-800 rodunded-3x1 py-5 relative" >
+          <p className="absolute top-0 right-7 bg-gray-800 w-6 h-6 rounded-full justify-center items-center">-</p>
+          { showDes ? 
           
           }
 
