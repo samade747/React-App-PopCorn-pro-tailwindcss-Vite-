@@ -55,15 +55,48 @@ const randomMint = Math.floor(Math.random() * 10)
         moviesData?.map((movies, index) => {
           <SingleMovies movies={movies} key={index} moviesData={moviesData} setShowDes={setShowDes} specificMovie={specificMovie} setSpecificMovie={setSpecificMovie} showBtn={showBtn} setShowBtn={setShowBtn} />
         })}
+        </div>
         <div className="lg:7/12 md:10/12 xs:w-10/12 sm:w-10/12 bg-gray-800 rodunded-3x1 py-5 relative" >
           <p className="absolute top-0 right-7 bg-gray-800 w-6 h-6 rounded-full justify-center items-center">-</p>
-          { showDes ? 
-          
-          }
-
-
+          { showDes ? <div>
+          <div className="flex ">
+            <p>Movies you watched</p>
+            <div className="flex justify-center items-center">
+              <div className="flex jusify-center items-center">
+              <img
+                src="https://www.emojiall.com/images/120/joypixels/0023-20e3.png"
+                width={"15px"}
+                alt=""
+              />
+              <p style={{marginLeft:"5px"}}>{count ? count : "0"} movies</p>
+            </div>
+            <div>
+              <p>⭐ {ratingStar1 > 10? "9.8": ratingStar1 }</p>
+            </div>
+            <div>
+              <p>🌟 {ratingStar2? ratingStar2 + ".0" : "0.0"}</p>
+            </div>
+            <div>
+              <p>⌛{watchedMin? watchedMin : "0"}</p>
+            </div>
+              </div>
+            </div>
+          </div>: <div></div>}
+        
+        
+          </div>  
         </div>
-      </div>
+ 
+        
+
+
+
+
+
+
+
+
+        
     )
 }
 
