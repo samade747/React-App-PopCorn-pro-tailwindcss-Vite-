@@ -81,7 +81,20 @@ const randomMint = Math.floor(Math.random() * 10)
             </div>
               </div>
             </div>
-          </div>: <div></div>}
+          </div> : <div>
+            <p className="absolute top-0 right-7 bg-gray-800 w-6 h-6 rounded-full justify-center items-center"></p>
+            <div className="flex justify-center">
+              <img width={"100px"} src={specificMovie?.Poster}/>
+            </div>
+            <div>
+              <p>{specificMovie?.Title}</p>
+              <p>{specificMovie?.Year}</p>
+              <p>{specificMovie?.Genre}</p>
+              <p>{specificMovie?.rating}</p>
+            </div>}
+            <div>
+              
+            </div>
         
         
           </div>  
