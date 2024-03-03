@@ -64,38 +64,8 @@ const randomMint = Math.floor(Math.random() * 10)
             <div className="flex justify-center items-center">
               <div className="flex jusify-center items-center">
               <img
-                src="https://www.emojiall.com/images/120/joypixels/0023-20e3.png"
-                width={"15px"}
-                alt=""
-              />
-              <p style={{marginLeft:"5px"}}>{count ? count : "0"} movies</p>
-            </div>
-            <div>
-              <p>⭐ {ratingStar1 > 10? "9.8": ratingStar1 }</p>
-            </div>
-            <div>
-              <p>🌟 {ratingStar2? ratingStar2 + ".0" : "0.0"}</p>
-            </div>
-            <div>
-              <p>⌛{watchedMin? watchedMin : "0"}</p>
-            </div>
-              </div>
-            </div>
-          </div> : <div>
-            <p className="absolute top-0 right-7 bg-gray-800 w-6 h-6 rounded-full justify-center items-center"></p>
-            <div className="flex justify-center">
-              <img width={"100px"} src={specificMovie?.Poster}/>
-            </div>
-            <div>
-              <p>{specificMovie?.Title}</p>
-              <p>{specificMovie?.Year}</p>
-              <p>{specificMovie?.Genre}</p>
-              <p>{specificMovie?.rating}</p>
-            </div>}
-            <div>
+                src="https://www.emojiall.com/images/120/joypixels/0023-20e3.png"width={"15px"} alt="" />
               
-            </div>
-        
         
           </div>  
         </div>
